@@ -1,0 +1,154 @@
+/* Custom utility classes */
+
+.btn-primary {
+  padding: 0.625rem 1rem;
+  background: linear-gradient(to right, rgb(79, 70, 229), rgb(99, 102, 241));
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, rgb(67, 56, 202), rgb(79, 70, 229));
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  padding: 0.625rem 1rem;
+  border: 2px solid rgb(209, 213, 219);
+  color: rgb(55, 65, 81);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background: white;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: rgb(156, 163, 175);
+  background-color: rgb(249, 250, 251);
+}
+
+.btn-danger {
+  padding: 0.625rem 1rem;
+  background: linear-gradient(to right, rgb(220, 38, 38), rgb(239, 68, 68));
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(to right, rgb(185, 28, 28), rgb(220, 38, 38));
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger:active {
+  transform: scale(0.95);
+}
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(243, 244, 246);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-elevated {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(243, 244, 246);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border: 2px solid rgb(229, 231, 235);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: rgb(79, 70, 229);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.label-text {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(55, 65, 81);
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-success {
+  background-color: rgb(220, 252, 231);
+  color: rgb(34, 197, 94);
+}
+
+.badge-warning {
+  background-color: rgb(254, 243, 199);
+  color: rgb(202, 138, 4);
+}
+
+.badge-danger {
+  background-color: rgb(254, 226, 226);
+  color: rgb(220, 38, 38);
+}
+
+.badge-info {
+  background-color: rgb(219, 234, 254);
+  color: rgb(30, 58, 138);
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: rgb(17, 24, 39);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
+
+.section-subtitle {
+  color: rgb(75, 85, 99);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}

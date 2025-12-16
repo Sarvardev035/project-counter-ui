@@ -1,0 +1,128 @@
+// Mock data for the application
+import type { User, Task, Project } from '../types';
+
+export const mockUsers: User[] = [
+  {
+    id: '1',
+    name: 'Alice Johnson',
+    email: 'alice@example.com',
+    avatar: '👩‍💼',
+  },
+  {
+    id: '2',
+    name: 'Bob Smith',
+    email: 'bob@example.com',
+    avatar: '👨‍💼',
+  },
+  {
+    id: '3',
+    name: 'Carol Davis',
+    email: 'carol@example.com',
+    avatar: '👩‍🔬',
+  },
+  {
+    id: '4',
+    name: 'David Wilson',
+    email: 'david@example.com',
+    avatar: '👨‍🚀',
+  },
+];
+
+export const mockProjects: Project[] = [
+  {
+    id: 'proj-1',
+    name: 'Website Redesign',
+    description: 'Complete redesign of the company website',
+    createdAt: '2025-01-01',
+    updatedAt: '2025-01-15',
+  },
+  {
+    id: 'proj-2',
+    name: 'Mobile App Development',
+    description: 'Development of iOS and Android apps',
+    createdAt: '2025-01-05',
+    updatedAt: '2025-01-16',
+  },
+  {
+    id: 'proj-3',
+    name: 'API Optimization',
+    description: 'Improve API performance and reliability',
+    createdAt: '2025-01-10',
+    updatedAt: '2025-01-14',
+  },
+];
+
+export const mockTasks: Task[] = [
+  {
+    id: 'task-1',
+    title: 'Design homepage mockup',
+    description: 'Create a mockup for the new homepage design',
+    status: 'in-progress',
+    priority: 'high',
+    due_date: '2025-12-25',
+    projectId: 'proj-1',
+    assignedUsers: [mockUsers[0]],
+    createdAt: '2025-12-01',
+    updatedAt: '2025-12-10',
+  },
+  {
+    id: 'task-2',
+    title: 'Review design feedback',
+    description: 'Incorporate feedback from stakeholders',
+    status: 'todo',
+    priority: 'medium',
+    due_date: '2025-12-28',
+    projectId: 'proj-1',
+    assignedUsers: [mockUsers[0], mockUsers[1]],
+    createdAt: '2025-12-05',
+    updatedAt: '2025-12-10',
+  },
+  {
+    id: 'task-3',
+    title: 'Setup development environment',
+    description: 'Configure dev environment and tools',
+    status: 'done',
+    priority: 'high',
+    due_date: '2025-12-20',
+    projectId: 'proj-2',
+    assignedUsers: [mockUsers[1], mockUsers[2]],
+    createdAt: '2025-12-02',
+    updatedAt: '2025-12-09',
+  },
+  {
+    id: 'task-4',
+    title: 'Implement authentication',
+    description: 'Add user authentication system',
+    status: 'in-progress',
+    priority: 'high',
+    due_date: '2025-12-30',
+    projectId: 'proj-2',
+    assignedUsers: [mockUsers[2]],
+    createdAt: '2025-12-08',
+    updatedAt: '2025-12-15',
+  },
+  {
+    id: 'task-5',
+    title: 'Analyze current API performance',
+    description: 'Profile and document performance bottlenecks',
+    status: 'todo',
+    priority: 'medium',
+    due_date: '2025-12-22',
+    projectId: 'proj-3',
+    assignedUsers: [mockUsers[3]],
+    createdAt: '2025-12-10',
+    updatedAt: '2025-12-10',
+  },
+  {
+    id: 'task-6',
+    title: 'Optimize database queries',
+    description: 'Refactor slow queries for better performance',
+    status: 'todo',
+    priority: 'high',
+    due_date: '2025-12-31',
+    projectId: 'proj-3',
+    assignedUsers: [mockUsers[3], mockUsers[1]],
+    createdAt: '2025-12-11',
+    updatedAt: '2025-12-11',
+  },
+];
